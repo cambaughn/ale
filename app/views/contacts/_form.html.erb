@@ -1,0 +1,27 @@
+
+<div class="panel panel-default">
+	<div class="panel-body">
+		<%= form_for Contact.new do |f| %>
+			<div class="form-group">
+				<%= f.text_field :name, required: true, class: "form-control input-lg", placeholder: "Name" %>
+			</div> 
+			<br />
+			<div class="form-group">
+				<%= f.email_field :email, required: true, class: "form-control input-lg", placeholder: "Email" %>
+			</div>
+			<br />
+			<div class="form-group">
+				<%= f.text_area :message, as: :text, class: "form-control input-lg", placeholder: "Message" %>
+			</div>
+			<div class="hidden">
+				<%= f.label :nickname %>
+				<%= f.text_field :nickname, hint: 'leave this field blank' %>
+			</div>
+
+			<br ?>
+
+			<%= f.submit 'Send Message', class: "btn btn-default" %>
+
+		<% end %>
+	</div> <!-- panel-body -->
+</div> <!-- panel -->
