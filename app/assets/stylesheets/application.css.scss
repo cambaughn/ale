@@ -38,7 +38,7 @@ $font-family-sans-serif: 	'Keep Calm', 'Helvetica Neue', Helvetica, Arial, sans-
 
 @import "font-awesome";
 
-
+/* Top Section */
 
 #logo {
 	height: 60px;
@@ -68,6 +68,8 @@ $font-family-sans-serif: 	'Keep Calm', 'Helvetica Neue', Helvetica, Arial, sans-
 	margin-left: 5px;
 }
 
+/* Text and Block Formatting */
+
 .light {
 	color: #f7f7f7;
 	margin-top: 50px;
@@ -86,7 +88,6 @@ p {
 .grey-block {
 	background-color: #2c2c2c; 
 	width: 100%;
-	height: 400px;
 	/* box-shadow: 0px 5px 5px #888888; */
 }
 
@@ -95,11 +96,40 @@ p {
 	height: 400px;
 }
 
+/* About Section */
+.about {
+	height: 400px;
+}
+
+/* Work Section */
+
+.work {
+
+	height: 400px;
+	/*
+	margin-left: -20px;
+	margin-right: -20px;
+	background:url('mountains.png') no-repeat center center;
+	background-size: cover;
+	background-attachment:relative;
+	background-position:center -250px;
+	*/
+}
+
+/* Social Section */
+
 .fa {
 	margin-left: 30px;
 	margin-right: 30px;
 	margin-top: 30px;
+	margin-bottom: 0px;
 }
+
+.social {
+	height: 300px;
+}
+
+/* Contact Section */
 
 .panel {
 	background-color: transparent;
@@ -109,7 +139,7 @@ p {
 
 .form {
 	margin-top: 0px;
-	margin-bottom: 100px;
+	padding-bottom: 0px;
 	border: none;
 }
 
@@ -142,6 +172,20 @@ p {
 	background-color: rgba(190, 190, 190, 1);
 }
 
+.contact {
+
+	height: 650px;
+	margin-left: -15px;
+	margin-right: -15px;
+	background:url('mountains.png') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment:relative;
+	background-position:center bottom;
+}
+
 /* .box {
 	border: 2px solid white;
 	width: 300px;
@@ -151,6 +195,9 @@ p {
 
 */
 
+/* Overall */
+
+
 .small-font {
 	font-family: 'Open Sans', sans-serif;
 }
@@ -158,5 +205,4 @@ p {
 body {
 	width: 100%;
 	height: auto;
-	padding-bottom: 500px;
 }
