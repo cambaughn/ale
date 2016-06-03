@@ -15,6 +15,7 @@ gem 'devise'
 gem 'bootstrap-sass', '~> 3.3'
 gem 'font-awesome-rails', '~> 4.5'
 gem 'mail_form'
+gem 'skrollr-rails', '~> 0.6.29'
 
 
 group :development, :test do

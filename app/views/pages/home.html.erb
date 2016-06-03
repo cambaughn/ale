@@ -2,12 +2,12 @@
 
 	<div class = "container">
 		<div class="col-md-5">
-			<div class="top-text">
+			<div class="top-text" data-0="opacity: 1" data-300="opacity: 0">
 				<h1 class="text-left big-name"> Alejandra <br> Reynoso </h1>
 				<h2 class="text-left subhead"> voice actor. </h2>
 			</div>
 		</div>
-		<div class="col-md-6">
+		<div class="col-md-6 bw">
 			<%= image_tag("black_and_white.png", alt: "alejandra", class: "hero") %>
 		</div>
 	</div> <!-- container -->
@@ -15,14 +15,16 @@
 <!-- About -->
 	<div class="grey-block col-md-12">
 		<div class="about light">
-				<h1 class="text-center">about</h1>
-			<div class="col-md-4 col-md-offset-2 small-font">
-				<p> Alejandra is a voice actor in Los Angeles, CA. She is awesome and can do pretty much anything. She graduated from Stanford University with a degree in Communication and Media Studies, and a minor in Japanese. </p>
-				<p> She enjoys doing creative things, like making YouTube videos, drawing, writing, and doing production design and costuming for photoshoots. </p>
-			</div>
-			<div class="col-md-4 small-font">
-				<p> Alejandra is the coolest person ever, and will be successful no matter what. She works super hard and is incredibly diligent and determined. </p>
-				<p> She can't wait to see where this next year will take her and looks forward to all the adventures to come. </p>
+			<div data-bottom-top="opacity: 0" data-center="opacity: 1">
+					<h1 class="text-center">about</h1>
+				<div class="col-md-4 col-md-offset-2 small-font">
+					<p> Alejandra is a voice actor in Los Angeles, CA. She is awesome and can do pretty much anything. She graduated from Stanford University with a degree in Communication and Media Studies, and a minor in Japanese. </p>
+					<p> She enjoys doing creative things, like making YouTube videos, drawing, writing, and doing production design and costuming for photoshoots. </p>
+				</div>
+				<div class="col-md-4 small-font">
+					<p> Alejandra is the coolest person ever, and will be successful no matter what. She works super hard and is incredibly diligent and determined. </p>
+					<p> She can't wait to see where this next year will take her and looks forward to all the adventures to come. </p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -30,13 +32,15 @@
 <!-- Work -->
 	<div class="white-block col-md-12">
 		<div class="work dark">
-			<h1 class="text-center">work</h1>
+			<div data-bottom-top="opacity: 0" data-center="opacity: 1">
+				<h1 class="text-center">work</h1>
+			</div>
 		</div>
 	</div>
 
 <!-- Social -->
 	<div class="grey-block col-md-12">
-		<div class="social light">
+		<div class="social light" data-bottom-top="opacity: 0" data-center="opacity: 1">
 			<h1 class="text-center">social</h1>
 			<p class="text-center"> A few places you can find Alejandra on the internet. </p>
 			<div class="col-md-6 col-md-offset-3 text-center">
@@ -50,12 +54,20 @@
 
 <!-- Contact -->
 	<div class="white-block col-md-12">
-		<div class="contact dark">
-			<h1 class="text-center">contact</h1>
-			<div class="form col-md-6 col-md-offset-3">
-				<%= render 'contacts/form' %>
+		<div class="contact dark" data-bottom-top="background-position: 50% -250px;" data-top-bottom="background-position: 50% 100px;" >
+			<div data-bottom-top="opacity: 0" data-center="opacity: 1">
+				<h1 class="text-center">contact</h1>
+				<div class="form col-md-6 col-md-offset-3">
+					<%= render 'contacts/form' %>
+				</div>
 			</div>
 		</div>
 	</div>
 
 </div> <!-- wrap -->
+
+<script type="text/javascript">
+  $(function(){
+    skrollr.init({forceHeight: false});
+  });
+</script>
