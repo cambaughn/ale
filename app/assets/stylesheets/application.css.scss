@@ -40,6 +40,10 @@ $font-family-sans-serif: 	'Keep Calm', 'Helvetica Neue', Helvetica, Arial, sans-
 
 /* Top Section */
 
+.top {
+	height: 600px;
+}
+
 #logo {
 	height: 60px;
 	margin-top: -20px;
@@ -69,6 +73,15 @@ $font-family-sans-serif: 	'Keep Calm', 'Helvetica Neue', Helvetica, Arial, sans-
 	margin-left: 5px;
 }
 
+.bw {
+	height: 700px;
+
+	background:url('black_and_white.png') no-repeat;
+	background-size: contain;
+	background-attachment:relative;
+	background-position:right bottom;
+}
+
 /* Text and Block Formatting */
 
 .light {
@@ -94,7 +107,6 @@ p {
 
 .white-block {
 	width: 100%;
-	height: 400px;
 }
 
 /* About Section */
@@ -106,15 +118,21 @@ p {
 
 .work {
 
-	height: 400px;
-	/*
-	margin-left: -20px;
-	margin-right: -20px;
-	background:url('mountains.png') no-repeat center center;
+	height: 500px;
+	margin-left: -15px;
+	margin-right: -15px;
+
+	background:url('clouds2.png') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
 	background-attachment:relative;
-	background-position:center -250px;
-	*/
+	background-position:center bottom;
+}
+
+.title {
+	margin-top: 50px;
 }
 
 /* Social Section */
